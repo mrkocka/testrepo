@@ -10,25 +10,62 @@
 <body>
     <div class="container">
         <form>
-            <div>
-                <label>Név: *</label>
-                <input id="name" name="name" type="text" required>
-            </div>
-            <div>
-                <label>Email cím: *</label>
-                <input id="email" name="email" type="email" required>
-            </div>
-            <div>
-                <label>Cím: *</label>
-                <input id="address" name="address" type="text" required>
-            </div>
-            <div>
-                <label>Megjegyzés:</label>
-                <textarea name="comment" id="comment" rows="5"></textarea>
-            </div>
-        </form>
+            <fieldset>
+                <legend>Személyes Adatok</legend>
+                <div>
+                    <label for="name">Név: *</label>
+                    <input id="name" name="name" type="text" required>
+                </div>
+                <div>
+                    <label for="email">Email cím: *</label>
+                    <input id="email" name="email" type="email" required>
+                </div>
+                <div>
+                    <label for="address">Cím: *</label>
+                    <input id="address" name="address" type="text" required>
+                </div>
+                <div>
+                    <label for="comment">Megjegyzés:</label>
+                    <textarea name="comment" id="comment" rows="5"></textarea>
+                </div>       
+
+            </fieldset>
+       
+    <fieldset>
+        <legend>Termék Adatai</legend>
+    <span>Extra feltét</span>
+        
+        <div>
+            <input type="radio" name="extra" id="nothing" value="0">
+            <label for="nothing">Nem kérek</label>
+        </div> 
+
+        <div>
+            <input type="radio" name="extra" id="cheese" value="300">
+            <label for="chesse">feltét 1</label>
+        </div> 
+        
+        <div>
+            <input type="radio" name="extra" id="double-cheese" value="600">
+            <label for="double-cheese">feltét 2</label>
+        </div> 
+        
+        <div>
+            <input type="radio" name="extra" id="double-meat" value="1000">
+            <label for="double-meat">feltét 3</label>
+        </div> 
+    <span>Szószok</span>
+    <select name="szoszok" id="">
+        <option value="szósz1">Szósz1</option>
+        <option value="szósz1">Szósz2</option>
+        <option value="szósz1">Szósz3</option>
+        <option value="szósz1">Szósz4</option>
+        <option value="szósz1" selected>Szósz5</option>
+    </select>
+    </fieldset>
+    <input class="sbutton" type="submit" name="submit" value="Küldés">
+    </form>
+
     </div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, dolore.</p>
-    
 </body>
 </html>
