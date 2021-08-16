@@ -1,0 +1,16 @@
+.row div {
+    outline: solid 1px  black;
+    height: 130px;
+}
+
+body{
+    background-color: cornflowerblue;
+}
+
+.container {
+    margin-top: 2%;
+}
+
+.nav-link{
+    font-size: 24px;
+}
