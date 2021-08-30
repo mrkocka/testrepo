@@ -20,3 +20,14 @@ function showSumPrice(price, amountNumber){
     }
     
 }
+
+//Ad helptext. 
+let helpText = document.createElement("small");
+helpText.className = "form-text text-muted";
+helpText.innerHTML = "Adja meg a feltéteket!";
+
+let parent = document.querySelector("div.form-group:nth-child(1)");
+parent.appendChild(helpText);
+
+
+parent.removeChild(helpText);
