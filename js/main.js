@@ -31,3 +31,41 @@ parent.appendChild(helpText);
 
 
 parent.removeChild(helpText);
+
+
+
+// Window events. 
+/*let sendButton = document.querySelector("form .btn.btn-primary");
+    sendButton.addEventListener("click", function(){
+        alert("Hello JS!");
+});
+
+sendButton.onclick = function(){
+    alert("Hello JS!")
+}*/
+
+
+
+
+
+//Második gomb egy másik gombra 
+
+let probButton = document.querySelector(".btn-danger");
+probButton.onclick = function(){
+    alert("3...2...1....BUMmm!!!")
+}
+
+//Iron man
+
+let ironButton = document.querySelector(".btn-secondary");
+    ironButton.onclick = function(){
+        alert("Én vagyok Vasember! ;)")
+    }
+
+
+//Űrlap események. 
+let orderFrom = document.querySelector("#orderFrom");
+orderFrom.addEventListener("submint", function(ev) {
+        ev.preventDefault();
+        console.log( this )
+});
