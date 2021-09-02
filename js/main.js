@@ -69,3 +69,31 @@ orderFrom.addEventListener("submint", function(ev) {
         ev.preventDefault();
         console.log( this )
 });
+
+//Parent element kezelése. 
+let alertCloseButton = document.querySelectorAll(".close[data-dismiss='alert']");
+let alertClosEventHandlerFunction = function(ev){
+    this.parentElement.style.display = "none";
+};
+for(let i= 0; i< alertCloseButton.length; i++) {
+    alertCloseButton[i].addEventListener("click", alertClosEventHandlerFunction); 
+}
+
+
+//Select elem kitöltése.
+let toppings = [
+    "Szalonna",
+    "Hagyma",
+    "Tükörtojás",
+    "Libamáj",
+    "Extra Sonka"
+];
+let toppingSelect = document.querySelector("#topInput");
+let index = 0; 
+while(index < toppings.length){
+    let option = document.createElement("option");
+    option.value = toppings[index];
+    option.innerHTML = toppings[index];
+    toppingSelect.appendChild(option);
+    index++;
+}
