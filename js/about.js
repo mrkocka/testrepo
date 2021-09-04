@@ -6,8 +6,15 @@ let users = [
     {surname: "Doe", firstname: "John", age: 16},
     {surname: "Jakc", firstname: "Vadölő", age: 20},
     {surname: "Radics", firstname: "Bence", age: 10},
-    {surname: "Radics", firstname: "Zétény", age: 10}
+    {surname: "Radics", firstname: "Zétény", age: 10},
+    {surname: "Radics", firstname: "Gigi", age: 20}
 ];
+
+/*let tableBody = dokument.que*/
+
+
+
+
 
 
 let tableBody = document.querySelector("#userTable tbody");
@@ -19,7 +26,7 @@ let createTD = (html, parent) => {
 
 let createButtonGroup = parent => {
 
-    let group = documet.createElement("div");
+    let group = document.createElement("div");
     group.className = "btn-group";
 
     let btnInfo = document.createElement("button");
